@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&family=Nunito:wght@300;400;500&display=swap');
+
+:root {
+  --cor-principal: #DD003F;
+  --cor-secundaria: #020D18;
+  --cor-borda: #ABB7CA;
+  --font-1: 'Dosis', sans-serif;
+  --font-2: 'Nunito', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--cor-secundaria);
+  color: white;
+  font-family: var(--font-1);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.red {
+  color: var(--cor-principal);
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+  font-size: 1.2em;
+  margin-left: 60px;
+}
+
+.link-nav {
+  font-family: var(--font-1);
+  color: #ABB7CA;
+  transition: 0.3s;
+}
+
+.link-nav:hover {
+  color: var(--cor-principal);
+}
+
+.div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.titulo-destaque {
+  margin-bottom: 20px;
+}
+
+img {
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+figcaption {
+  font-size: 1em;
+  font-family: var(--font-2);
+  font-weight: bold;
+}
+
+a {
+  color: white;
+}
+
+figcaption:hover {
+  color: #C0F836;
+}
+
+.section {
+  background-color: #000d1f;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 20px;
+}
+
+footer {
+  border-top: 1px solid var(--cor-borda);
+  padding: 40px;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.fa-home:before {
+  content: "\f015";
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.link-footer {
+  color: #ABB7CA;
+}
+
+.link-footer:hover {
+  color: #C0F836;
+}
