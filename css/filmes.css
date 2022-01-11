@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&family=Nunito:wght@300;400;500&display=swap');
+
+:root {
+  --cor-principal: #DD003F;
+  --cor-secundaria: #020D18;
+  --cor-borda: #ABB7CA;
+  --font-1: 'Dosis', sans-serif;
+  --font-2: 'Nunito', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--cor-secundaria);
+  color: white;
+  font-family: var(--font-1);
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.red {
+  color: var(--cor-principal);
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+iframe {
+  width: 800px;
+  height: 500px;
+}
+
+section {
+  padding-top: 20px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+button {
+  width: 150px;
+  height: 45px;
+  margin: 20px;
+  border: none;
+  font-size: 18px;
+  font-family: var(--font-2);
+  border-radius: 10px;
+  color: white;
+  background-color: var(--cor-principal);
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
