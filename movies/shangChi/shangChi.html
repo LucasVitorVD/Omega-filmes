@@ -13,12 +13,28 @@
   </header>
 
   <div class="video">
-    <video src="shang-chi-dublado.mp4" controls></video>
+    <video id="movie-content" controls poster="imgShangChi.jpg" autoplay></video>
   </div>
 
   <div class="buttons">
-    <button>Dublado</button>
-    <button>Legendado</button>
+    <button id="btn-dublado">Dublado</button>
+    <button id="btn-legendado">Legendado</button>
   </div>
+
+  <script>
+    const btnDublado = document.querySelector('#btn-dublado')
+    const btnLegendado = document.querySelector('#btn-legendado')
+    const movieContent = document.querySelector('#movie-content')
+
+    const verify = () => {
+      movieContent.setAttribute('src', '') || movieContent.setAttribute("poster", "imgErro.jpg")
+
+      movieContent.setAttribute('src', 'shang-chi-dublado.mp4') || movieContent.setAttribute('poster', '')
+    }
+
+    btnDublado.addEventListener('click', () => {
+      verify()
+    })
+  </script>
 </body>
 </html>
