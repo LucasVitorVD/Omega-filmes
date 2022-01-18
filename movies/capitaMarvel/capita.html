@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capitã Marvel</title>
+  <link rel="stylesheet" href="/css/filmes.css">
+</head>
+<body>
+  <header>
+    <h1><strong class="red">Ômega</strong> Filmes</h1>
+    <a class="first-page" href="/index.html">Início</a>
+  </header>
+
+  <div class="video">
+    <video id="movie-content" controls poster="imgCapita.jpg" autoplay></video>
+  </div>
+
+  <div class="buttons">
+    <button id="btn-dublado">Dublado</button>
+    <button id="btn-legendado">Legendado</button>
+  </div>
+
+  <script>
+    const btnDublado = document.querySelector('#btn-dublado')
+    const btnLegendado = document.querySelector('#btn-legendado')
+    const movieContent = document.querySelector('#movie-content')
+
+    btnDublado.addEventListener('click', () => {
+      movieContent.setAttribute('poster', 'imgErro.jpg')
+    })
+
+    btnLegendado.addEventListener('click', () => {
+      movieContent.setAttribute('poster', 'imgErro.jpg')
+    })
+  </script>
+</body>
+</html>

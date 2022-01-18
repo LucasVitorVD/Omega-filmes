@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ômega Filmes</title>
+  <title>Shang Chi</title>
   <link rel="stylesheet" href="/css/filmes.css">
 </head>
 <body>
   <header>
     <h1><strong class="red">Ômega</strong> Filmes</h1>
+    <a class="first-page" href="/index.html">Início</a>
   </header>
 
   <div class="video">
@@ -26,14 +27,12 @@
     const btnLegendado = document.querySelector('#btn-legendado')
     const movieContent = document.querySelector('#movie-content')
 
-    const verify = () => {
-      movieContent.setAttribute('src', '') || movieContent.setAttribute("poster", "imgErro.jpg")
-
-      movieContent.setAttribute('src', 'shang-chi-dublado.mp4') || movieContent.setAttribute('poster', '')
-    }
-
     btnDublado.addEventListener('click', () => {
-      verify()
+      movieContent.setAttribute('src', 'shang-chi-dublado.mp4')
+    })
+
+    btnLegendado.addEventListener('click', () => {
+      movieContent.setAttribute('src', 'shang-chi-legendado.mp4')
     })
   </script>
 </body>

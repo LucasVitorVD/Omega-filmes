@@ -31,6 +31,15 @@ header {
   color: var(--cor-principal);
 }
 
+.first-page {
+  color: #ABB7CA;
+  font-size: 1.2em;
+}
+
+.first-page:hover {
+  text-decoration: underline;
+}
+
 .video {
   display: flex;
   justify-content: center;
